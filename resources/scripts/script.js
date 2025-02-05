@@ -1,4 +1,7 @@
 // SCRIPT
+"use strict";
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.3';
+
 
 const supabase = createClient('https://tu-proyecto.supabase.co', 'tu-anon-key');
 
@@ -15,6 +18,7 @@ async function CrearCuenta(username, password) {
         console.error('Error al guardar las credenciales:', error);
     } else {
         console.log('Credenciales guardadas exitosamente:', data);
+        window.location.href = 'seccion-privada.html';
     }
 }
 
@@ -44,7 +48,7 @@ async function IniciarSeccion(username, password) {
 
 
 /* Escucha evento submit del form */
-document.getElementById('loginForm').addEventListener('submit', function(e) {
+document.getElementById('loginForm').addEventListener('Crear', function(e) {
     /* Previene envío por defecto */
     e.preventDefault();
 
@@ -52,12 +56,17 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    IniciarSeccion(username, password).then(isValid => {
-        if (isValid) {
-            alert('Inicio de sesión exitoso');
-            window.location.href = 'seccion-privada.html';
-        } else {
-            alert('Nombre de usuario o contraseña incorrectos');
-        }
-    }
+
+    CrearCuenta(username, password);
+
+
+    
+ //   IniciarSeccion(username, password).then(isValid => {
+   //     if (isValid) {
+ //           alert('Inicio de sesión exitoso');
+  //          window.location.href = 'seccion-privada.html';
+ //       } else {
+  //          alert('Nombre de usuario o contraseña incorrectos');
+  //      }
+ //   }
     });
