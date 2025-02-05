@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const password = document.getElementById('password').value;
 
     /* Valida credenciales */
-    if (username === 'usuario' && password === 'contraseña') {
+    if (username === 'bella' && password === 'teamo') {
         /* Muestra mensaje de éxito */
         alert('Inicio de sesión exitoso');
         /* Redirecciona a área privada */

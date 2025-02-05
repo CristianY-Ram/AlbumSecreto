@@ -45,7 +45,6 @@ body {
     background-size: cover;
     /* Evita repetición de imagen */
     background-repeat: no-repeat;
-    
     /* Mantiene fondo fijo */
     background-attachment: fixed;
 }
