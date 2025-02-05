@@ -49,7 +49,11 @@ body {
     /* Evita que la imagen se repita */
     background-position: center;
     /* Centra la imagen */
+    background-attachment: fixed;
+    /* Mantiene el fondo fijo durante el scroll */
 }
+
+
 
 
 
