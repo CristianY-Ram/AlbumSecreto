@@ -2,7 +2,6 @@
 
 const supabase = createClient('https://tu-proyecto.supabase.co', 'tu-anon-key');
 
-
 // Función para guardar usuario y contraseña
 async function CrearCuenta(username, password) {
     const {
