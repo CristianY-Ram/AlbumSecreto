@@ -75,6 +75,8 @@ footer {
     padding: 20px;
     /* Centra el formulario */
     margin: 0 auto;
+    /* Margen inferior */
+    margin-bottom: 50px;
     /* Ancho máximo */
     max-width: 350px;
     /* Bordes redondeados */
