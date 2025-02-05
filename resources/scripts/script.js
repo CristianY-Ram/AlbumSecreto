@@ -1,18 +1,21 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita el envío del formulario
 
+/* Escucha evento submit del form */
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    /* Previene envío por defecto */
+    e.preventDefault();
+
+    /* Obtiene valores de campos */
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Aquí puedes añadir la lógica para validar el usuario
-    if (username === 'usuario' && password === 'contraseña') {
+    /* Valida credenciales */
+    if (username === 'bella' && password === 'teamo') {
+        /* Muestra mensaje de éxito */
         alert('Inicio de sesión exitoso');
-        // Redirigir a la sección privada
+        /* Redirecciona a área privada */
         window.location.href = 'seccion-privada.html';
     } else {
+        /* Muestra error */
         alert('Nombre de usuario o contraseña incorrectos');
     }
 });
-
-
-
