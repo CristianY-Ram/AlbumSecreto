@@ -1,0 +1,125 @@
+/* Archivo CSS */
+
+
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    /* Aplica la fuente personalizada */
+    color: #ff69b4;
+    /* Color rosado */
+    text-shadow: 3px 3px 5px rgba(0.9, 0.9, 0.9, 0.9);
+    /* Sombra de texto */
+    text-align: center;
+    /* Centra el título */
+    margin-top: 30px;
+    /* Añade un margen superior */
+}
+
+section#Introduccion p {
+    font-family: 'Open Sans', sans-serif;
+    /* Aplica la fuente Open Sans */
+    color: #ffffff;
+    /* Blanco */
+    line-height: 1.2;
+    /* Espaciado ente Lineas*/
+    margin-bottom: 20px;
+    /* Espaciado entre párrafos */
+    text-align: left;
+    /* Centra el texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo negro semi-transparente */
+    padding: 10px 20px;
+    /* Añade espacio interno alrededor del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    margin-left: 0;
+    /* Pega el texto al borde izquierdo */
+}
+
+
+
+
+body {
+    background-image: url('../images/fondos/fondo1.jpg');
+    /* Url que enlaza una imagen al fondo de la pagina */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen */
+}
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo negro semi-transparente */
+    color: #ffffff;
+    /* Texto blanco */
+    text-align: center;
+    /* Centrar el texto */
+    padding: 1px 10px;
+    /* Espaciado interno */
+    border: 1px solid #ff69b4;
+    /* Borde rosa claro */
+    border-radius: 15px;
+}
+
+
+
+/* Estilos para el formulario de inicio de sesión */
+#login {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo blanco semi-transparente */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 350px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    /* Sombra para el contenedor */
+}
+
+#login h2 {
+    font-family: 'Dancing Script', cursive;
+    /* Fuente Dancing Script */
+    text-align: center;
+    color: #e91e63;
+    /* Color rosado */
+}
+
+#login label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login button {
+    background-color: #e91e63;
+    /* Color de fondo rosado */
+    color: #ffffff;
+    /* Color del texto blanco */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+    background-color: #c2185b;
+    /* Color de fondo al pasar el ratón */
+}
