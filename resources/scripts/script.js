@@ -15,6 +15,29 @@ document.querySelectorAll('.changeForm').forEach(button => {
     });
 });
 
+function Enviar(email, password) {
+    fetch('https://tu-servidor.com/crear-cuenta', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: email, password: password })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Cuenta creada exitosamente.');
+            // Redirigir o mostrar otra interfaz aquí
+        } else {
+            alert('Error al crear la cuenta: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+
 document.getElementById('buttonCrearCuenta').addEventListener('click', function(e) {
     const email = document.getElementById('correo').value;
     const password = document.getElementById('createclave').value;
