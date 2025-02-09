@@ -1,5 +1,13 @@
 // Archivo SCRIPT
 
+document.getElementById('changeForm').addEventListener('click', function(e) {
+    document.getElementById('loginForm').style.display = 'none';
+    document.getElementById('createAccountForm').style.display = 'block';
+});
+
+    
+
+
 document.getElementById('tituloInicioSesion').textContent = 'Nuevo Título';
 
 document.getElementById('iniciarButton').addEventListener('click', function(e) {
