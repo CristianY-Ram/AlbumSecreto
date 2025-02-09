@@ -1,4 +1,4 @@
-// SCRIPT
+// Archivo SCRIPT
 
 // Función para guardar usuario y contraseña
 async function CrearCuenta(username, password) {
