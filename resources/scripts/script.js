@@ -1,8 +1,17 @@
 // Archivo SCRIPT
 
+
 document.getElementById('changeForm').addEventListener('click', function(e) {
-    document.getElementById('loginForm').style.display = 'none';
-    document.getElementById('createForm').style.display = 'block';
+    const loginForm = document.getElementById('loginForm');
+    const createForm = document.getElementById('createForm');
+
+    if (loginForm.style.display === 'none') {
+        loginForm.style.display = 'block';
+        createForm.style.display = 'none';
+    } else {
+        loginForm.style.display = 'none';
+        createForm.style.display = 'block';
+    }
 });
 
     
