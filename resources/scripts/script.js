@@ -39,7 +39,7 @@ document.getElementById('buttonCrearCuenta').addEventListener('click', function(
     }
 
     // Enviar datos al servidor
-    enviarDatosAlServidor(email, password);
+    Enviar(email, password);
 });
 
 
