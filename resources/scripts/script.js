@@ -1,9 +1,4 @@
 // SCRIPT
-"use strict";
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.3';
-
-
-const supabase = createClient('https://tu-proyecto.supabase.co', 'tu-anon-key');
 
 // Función para guardar usuario y contraseña
 async function CrearCuenta(username, password) {
