@@ -32,7 +32,19 @@
         <!-- Formulario de Inicio de Sesión -->
         <section id="login">
             <form id="loginForm">
-                <h2 id="titleForm" >Iniciar Sesión</h2>
+                <h2>Iniciar Sesión</h2>
+                <label for="cuenta">Cuenta:</label>
+                <input type="text" id="cuenta" name="valorCuenta" placeholder="Ingrese correo o nombre de usuario." required>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="valorClave" placeholder="Ingrese su contraseña." required>
+
+                <button type="Crear">Iniciar</button>
+                <p id="CrearCuenta">¿No tienes una cuenta? <a href="#" onclick="FormRegistro()">Crear una cuenta</a></p>
+            </form>
+            
+            <form id="createForm" style="display: none;">
+                <h2>Crear Cuenta</h2>
                 <label for="username">Nombre de Usuario:</label>
                 <input type="text" id="username" name="username" placeholder="" required>
 
