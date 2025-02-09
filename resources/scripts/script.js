@@ -16,7 +16,7 @@ document.querySelectorAll('.changeForm').forEach(button => {
 });
 
 function Enviar(email, password) {
-    fetch('https://tu-servidor.com/crear-cuenta', {
+    fetch('https://backendprivate.onrender.com//crear-cuenta', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
