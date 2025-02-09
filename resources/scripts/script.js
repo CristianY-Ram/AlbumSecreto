@@ -1,7 +1,7 @@
 // Archivo SCRIPT
 
 
-document.querySelectorAll('.changeForm');
+document.querySelector('.changeForm');
     const loginForm = document.getElementById('loginForm');
     const createForm = document.getElementById('createForm');
 
