@@ -17,14 +17,6 @@ document.getElementById('changeForm').addEventListener('click', function(e) {
     
 
 
-document.getElementById('tituloInicioSesion').textContent = 'Nuevo Título';
-
-document.getElementById('iniciarButton').addEventListener('click', function(e) {
-    // Acción para el botón de iniciar
-});
-
-
-
 
 function mostrarFormularioCrearCuenta() {
     const loginSection = document.getElementById('login');
