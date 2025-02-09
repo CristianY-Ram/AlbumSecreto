@@ -1,5 +1,44 @@
 // Archivo SCRIPT
 
+document.getElementById('tituloInicioSesion').textContent = 'Nuevo Título';
+
+document.getElementById('iniciarButton').addEventListener('click', function(e) {
+    // Acción para el botón de iniciar
+});
+
+
+
+
+function mostrarFormularioCrearCuenta() {
+    const loginSection = document.getElementById('login');
+    loginSection.innerHTML = `
+        <form id="createAccountForm">
+            <h2>Crear Cuenta</h2>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Crear Cuenta</button>
+        </form>
+    `;
+    document.getElementById('createAccountForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        CrearCuenta(email, password);
+    });
+}
+
+
+
+
+
+
+
+
+
 // Función para guardar usuario y contraseña
 async function CrearCuenta(username, password) {
     const {
