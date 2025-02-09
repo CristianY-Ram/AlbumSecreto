@@ -103,8 +103,7 @@ footer {
 }
 
 /* Campos de entrada */
-#login input[type="text"],
-#login input[type="password"] {
+#login input {
     /* Ancho del campo */
     width: 90%;
     /* Espacio interno */
