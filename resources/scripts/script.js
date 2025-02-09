@@ -1,7 +1,7 @@
 // Archivo SCRIPT
 
 
-document.getElementById('changeForm').addEventListener('click', function(e) {
+document.querySelectorAll('.changeForm');
     const loginForm = document.getElementById('loginForm');
     const createForm = document.getElementById('createForm');
 
