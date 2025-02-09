@@ -64,13 +64,3 @@ document.getElementById('buttonCrearCuenta').addEventListener('click', function(
     // Enviar datos al servidor
     Enviar(email, password);
 });
-
-
-
-
-document.getElementById('Haks').addEventListener('click', function(e) {
-
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-});
