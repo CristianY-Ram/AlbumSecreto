@@ -35,24 +35,20 @@
                 <h2>Iniciar Sesión</h2>
                 <label for="cuenta">Cuenta:</label>
                 <input type="text" id="cuenta" name="valorCuenta" placeholder="Ingrese correo o nombre de usuario." required>
-
                 <label for="clave">Contraseña:</label>
                 <input type="password" id="clave" name="valorClave" placeholder="Ingrese su contraseña." required>
-
                 <button id="buttonIniciarCuenta" type="button">Iniciar</button>
                 <button id="buttonNoTengoCuenta" type="button">No tengo Cuenta</button>
             </form>
             
             <form id="createForm" style="display: none;">
                 <h2>Crear Cuenta</h2>
-                <label for="username">Nombre de Usuario:</label>
-                <input type="text" id="username" name="username" placeholder="" required>
-
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" placeholder="" required>
-
-                <button type="Crear">Iniciar</button>
-                <p id="CrearCuenta">¿No tienes una cuenta? <a href="#" onclick="FormRegistro()">Crear una cuenta</a></p>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
+                <label for="createclave">Contraseña:</label>
+                <input type="password" id="createclave" name="myclave" placeholder="Cree su una contraseña." required>
+                <button id="buttonCrearCuenta" type="button">Crear Cuenta</button>
+                <button id="buttonYaTengoCuenta" type="button">Ya tengo Cuenta</button>
             </form>
         </section>
     </main>
