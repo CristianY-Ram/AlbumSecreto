@@ -1,17 +1,18 @@
 // Archivo SCRIPT
 
+document.querySelectorAll('.changeForm').forEach(button => {
+    button.addEventListener('click', function(e) {
+        const loginForm = document.getElementById('loginForm');
+        const createForm = document.getElementById('createForm');
 
-document.querySelector('.changeForm').addEventListener('click', function(e) {
-    const loginForm = document.getElementById('loginForm');
-    const createForm = document.getElementById('createForm');
-
-    if (loginForm.style.display === 'none') {
-        loginForm.style.display = 'block';
-        createForm.style.display = 'none';
-    } else {
-        loginForm.style.display = 'none';
-        createForm.style.display = 'block';
-    }
+        if (loginForm.style.display === 'none') {
+            loginForm.style.display = 'block';
+            createForm.style.display = 'none';
+        } else {
+            loginForm.style.display = 'none';
+            createForm.style.display = 'block';
+        }
+    });
 });
 
 document.getElementById('Haks').addEventListener('click', function(e) {
