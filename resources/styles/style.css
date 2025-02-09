@@ -146,6 +146,35 @@ footer {
     background-color: #c2185b;
 }
 
+/* Estilo para los botones de la clase changeForm */
+.changeForm {
+    /* Fondo gris claro */
+    background-color: #d3d3d3; /* Puedes ajustar este valor según tus preferencias */
+    /* Color del texto */
+    color: #333; /* Color del texto gris oscuro */
+    /* Sin borde */
+    border: none;
+    /* Espaciado interno */
+    padding: 10px 20px;
+    /* Centra el texto */
+    text-align: center;
+    /* Muestra en línea */
+    display: inline-block;
+    /* Tamaño de fuente */
+    font-size: 16px;
+    /* Cursor tipo mano */
+    cursor: pointer;
+    /* Bordes redondeados */
+    border-radius: 5px;
+    /* Transición suave */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+.changeForm:hover {
+    /* Color al pasar el ratón */
+    background-color: #a9a9a9; /* Gris más oscuro al pasar el ratón */
+}
 
 /* Estilos sección privada */
 #contenido-privado {
