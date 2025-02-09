@@ -16,6 +16,7 @@ document.querySelectorAll('.changeForm').forEach(button => {
 });
 
 function Enviar(email, password) {
+    alert('Enviando..');
     fetch('https://backendprivate.onrender.com/sb/CrearCuenta', {
         method: 'POST',
         headers: {
