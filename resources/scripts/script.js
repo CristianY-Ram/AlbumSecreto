@@ -33,13 +33,12 @@ function Enviar(email, password) {
         if (!response.ok) {
             throw new Error('Error en la solicitud: ' + response.statusText);
         }
-        return response.json();
+        return response.json(); // Asegurarse de que la respuesta se trate como JSON
     })
     .then(data => {
         console.log('Datos recibidos:', data);
         if (data.success) {
             alert('Cuenta creada exitosamente.');
-            // Redirigir o mostrar otra interfaz aquí
         } else {
             alert('Error al crear la cuenta: ' + (data.message || 'Ocurrió un problema inesperado.'));
         }
