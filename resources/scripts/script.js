@@ -1,23 +1,22 @@
-// Archivo SCRIPT
+// Archivo "resources/styles/script.js"
 
 document.querySelectorAll('.changeForm').forEach(button => {
     button.addEventListener('click', function(e) {
         const loginForm = document.getElementById('loginForm');
         const createForm = document.getElementById('createForm');
-
         if (loginForm.style.display === 'none') {
             loginForm.style.display = 'block';
             createForm.style.display = 'none';
+            // También limpiar valores del formulario actual
         } else {
             loginForm.style.display = 'none';
             createForm.style.display = 'block';
+            // También limpiar valores del formulario actual
         }
     });
 });
-
-function Enviar(email, password) {
+function Enviar(email, password) { // explica cada término de esta función a profundidad
     console.log('Enviando datos:', { email, password });
-    alert('Enviando..');
     fetch('https://backendprivate.onrender.com/sb/CrearCuenta', {
         method: 'POST',
         headers: {
@@ -29,11 +28,12 @@ function Enviar(email, password) {
         })
     })
     .then(response => {
-        console.log('Respuesta recibida:', response);
+        console.log('Respuesta recibida:',
+            response);
         if (!response.ok) {
             throw new Error('Error en la solicitud: ' + response.statusText);
         }
-        return response.json(); // Asegurarse de que la respuesta se trate como JSON
+        return response.json();
     })
     .then(data => {
         console.log('Datos recibidos:', data);
