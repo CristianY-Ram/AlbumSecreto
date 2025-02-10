@@ -1,4 +1,4 @@
-// Archivo "resources/styles/script.js"
+// Archivo "resources/scripts/script.js"
 
 document.querySelectorAll('.changeForm').forEach(button => {
     button.addEventListener('click', function(e) {
