@@ -16,6 +16,7 @@ document.querySelectorAll('.changeForm').forEach(button => {
 });
 
 function Enviar(email, password) {
+    console.log('Enviando datos:', { email, password });
     alert('Enviando..');
     fetch('https://backendprivate.onrender.com/sb/CrearCuenta', {
         method: 'POST',
@@ -27,20 +28,27 @@ function Enviar(email, password) {
             password: password
         })
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Respuesta recibida:', response);
+        if (!response.ok) {
+            throw new Error('Error en la solicitud: ' + response.statusText);
+        }
+        return response.json();
+    })
     .then(data => {
+        console.log('Datos recibidos:', data);
         if (data.success) {
             alert('Cuenta creada exitosamente.');
             // Redirigir o mostrar otra interfaz aquí
         } else {
-            alert('Error al crear la cuenta: ' + data.message);
+            alert('Error al crear la cuenta: ' + (data.message || 'Ocurrió un problema inesperado.'));
         }
     })
     .catch(error => {
         console.error('Error:', error);
+        alert('Error en la solicitud: ' + error.message);
     });
 }
-
 
 document.getElementById('buttonCrearCuenta').addEventListener('click', function(e) {
     const email = document.getElementById('correo').value;
