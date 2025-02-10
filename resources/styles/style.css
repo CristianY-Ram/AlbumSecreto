@@ -1,20 +1,11 @@
-/* Archivo STYLES */
-
-/* Define estilo de título principal */
+/* ARCHIVO "resources/styles/style.css" */
 header h1 {
-    /* Aplica fuente cursiva */
     font-family: 'Dancing Script', cursive;
-    /* Define color rosa */
     color: #ff69b4;
-    /* Agrega sombra al texto */
     text-shadow: 3px 3px 5px rgba(0.9, 0.9, 0.9, 0.9);
-    /* Centra el título */
     text-align: center;
-    /* Espacio superior */
     margin-top: 30px;
 }
-
-/* Estilo párrafos introducción */
 section#Introduccion p {
     /* Establece fuente sans-serif */
     font-family: 'Open Sans', sans-serif;
@@ -149,9 +140,11 @@ footer {
 /* Estilo para los botones de la clase changeForm */
 .changeForm {
     /* Fondo gris claro */
-    background-color: #d3d3d3; /* Puedes ajustar este valor según tus preferencias */
+    background-color: #d3d3d3;
+    /* Puedes ajustar este valor según tus preferencias */
     /* Color del texto */
-    color: #333; /* Color del texto gris oscuro */
+    color: #333;
+    /* Color del texto gris oscuro */
     /* Sin borde */
     border: none;
     /* Espaciado interno */
@@ -173,7 +166,8 @@ footer {
 /* Efecto hover del botón */
 .changeForm:hover {
     /* Color al pasar el ratón */
-    background-color: #a9a9a9; /* Gris más oscuro al pasar el ratón */
+    background-color: #a9a9a9;
+    /* Gris más oscuro al pasar el ratón */
 }
 
 /* Estilos sección privada */
