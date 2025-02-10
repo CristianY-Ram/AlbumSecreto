@@ -18,7 +18,7 @@ section#Introduccion p {
     border-radius: 5px;
     margin-left: 0;
 }
-html { /* ¿Puedo aplicarlo al html en vez de al body?*/
+html {
     background-image: url('../images/fondos/fondo1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,16 +71,6 @@ footer {
 }
 #login button:hover {
     background-color: #c2185b;
-}
-.changeForm {
-    background: none;
-    color: #e91e63;
-    text-decoration: underline;
-    padding: 0;
-    font-size: 14px;
-}
-.changeForm:hover { /* Adaptar con los nuevos ajustes */
-    background-color: #a9a9a9;
 }
 
 /* los siguientes apartados estilos no están todavía implementados al 100% ya que pertenecen a una nueva hoja, mantener como un borrador */
