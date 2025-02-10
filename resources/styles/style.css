@@ -18,7 +18,7 @@ section#Introduccion p {
     border-radius: 5px;
     margin-left: 0;
 }
-body { /* ¿Puedo aplicarlo al html en vez de al body?*/
+html { /* ¿Puedo aplicarlo al html en vez de al body?*/
     background-image: url('../images/fondos/fondo1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ footer {
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    text-align: center
+    text-align: center;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
@@ -72,17 +72,12 @@ footer {
 #login button:hover {
     background-color: #c2185b;
 }
-.changeForm { /* Este botón tiene que parecer más una sugerencia que que un botón así como un texto */
-    background-color: #d3d3d3;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.changeForm {
+    background: none;
+    color: #e91e63;
+    text-decoration: underline;
+    padding: 0;
+    font-size: 14px;
 }
 .changeForm:hover { /* Adaptar con los nuevos ajustes */
     background-color: #a9a9a9;
