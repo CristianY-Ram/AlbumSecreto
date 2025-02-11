@@ -17,7 +17,7 @@ document.querySelectorAll('.changeForm').forEach(button => {
 });
 function Enviar(email, password) { // explica cada término de esta función a profundidad
     console.log('Enviando datos:', { email, password });
-    fetch('https://backendprivate.onrender.com/sb/CrearCuenta', {
+    fetch(`${process.env.BACKEND_URL}/sb/CrearCuenta`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
