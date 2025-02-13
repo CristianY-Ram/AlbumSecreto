@@ -1,16 +1,63 @@
+<!-- Archivo HTML -->
+
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Álbum Secreto</title>
+    <meta name="description" content="El espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/images/iconos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/images/iconos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/images/iconos/favicon-16x16.png">
+    <link rel="manifest" href="resources/images/iconos/site.webmanifest">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+    <header>
+        <h1>Álbum Secreto</h1>
+    </header>
+    <main>
+        <section id="Introduccion">
+            <p>
+                Bienvenidos a Álbum Secreto, el espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.
+            </p>
+            <p>
+                Totalmente confiable y seguro, Álbum Secreto es la plataforma ideal para guardar tus secretos y notas de diario. Nos preocupamos por tu privacidad y trabajamos para proteger tus datos. Únete hoy mismo creando una cuenta o inicia sesión para comenzar a escribir tu historia.
+            </p>
+        </section>
+        <section id="login">
+            <form id="loginForm">
+                <h2>Iniciar Sesión</h2>
+                <label for="cuenta">Cuenta:</label>
+                <input type="text" id="cuenta" name="valorCuenta" placeholder="Ingrese correo o nombre de usuario." required>
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="valorClave" placeholder="Ingrese su contraseña." required>
+                <button id="buttonIniciarCuenta" type="button">Iniciar</button>
+                <button class="changeForm" type="button">No tengo Cuenta</button>
+            </form>
+            <form id="createForm" style="display: none;">
+                <h2>Crear Cuenta</h2>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
+                <label for="createclave">Contraseña:</label>
+                <input type="password" id="createclave" name="myclave" placeholder="Cree su una contraseña." required>
+                <button id="buttonCrearCuenta" type="button">Registrarse</button>
+                <button class="changeForm" type="button">Ya tengo Cuenta</button>
+                <!-- Hay que cambiarle el color a los botones de cambio "changeForm" de formulario -->
+            </form>
+        </section>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <p>
+            &copy; 2025 Álbum Secreto
+        </p>
+        <p>
+            Términos de Servicio | Política de Privacidad
+        </p>
+    </footer>
+    <script src="resources/scripts/script.js"></script>
 </body>
-
 </html>
