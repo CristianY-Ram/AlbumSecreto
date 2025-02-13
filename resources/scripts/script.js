@@ -1,3 +1,7 @@
+
+// Configuración del backend
+const BACKEND_URL = 'TU_URL_DEL_BACKEND'; // Reemplaza esto con tu URL real
+
 // Archivo "resources/scripts/script.js"
 
 document.querySelectorAll('.changeForm').forEach(button => {
@@ -74,7 +78,7 @@ document.getElementById('buttonCrearCuenta').addEventListener('click', function(
 document.getElementById('VerificarEstadoServidor').addEventListener('click', function(e) {
     e.preventDefault(); // Evita que el enlace navegue a otra página
 
-    fetch(`${process.env.BACKEND_URL}/server/Estado`)
+    fetch(`${BACKEND_URL}/server/Estado`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error en la solicitud: ' + response.statusText);
