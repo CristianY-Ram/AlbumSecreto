@@ -1,8 +1,7 @@
-
-// Configuración del backend
-const BACKEND_URL = 'TU_URL_DEL_BACKEND'; // Reemplaza esto con tu URL real
-
 // Archivo "resources/scripts/script.js"
+
+const BACKEND_URL = 'https://3b137d11-88e6-45b6-be60-61724ad3e15c-00-2gjo5xa8flqk3.worf.replit.dev';
+
 
 document.querySelectorAll('.changeForm').forEach(button => {
     button.addEventListener('click', function(e) {
@@ -15,13 +14,13 @@ document.querySelectorAll('.changeForm').forEach(button => {
         } else {
             loginForm.style.display = 'none';
             createForm.style.display = 'block';
-            // También limpiar valores del formulario actual
+            // También limpiar valores del formulario 'createForm'
         }
     });
 });
 function Enviar(email, password) { // explica cada término de esta función a profundidad
     console.log('Enviando datos:', { email, password });
-    fetch(`${process.env.BACKEND_URL}/sb/CrearCuenta`, {
+    fetch(`${BACKEND_URL}/sb/CrearCuenta`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
