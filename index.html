@@ -34,19 +34,24 @@
                 <label for="clave">Contraseña:</label>
                 <input type="password" id="clave" name="valorClave" placeholder="Ingrese su contraseña." required>
                 <button id="buttonIniciarCuenta" type="button">Iniciar</button>
-                <button class="changeForm" type="button">No tengo Cuenta</button>
-            </form>
-            <form id="createForm" style="display: none;">
-                <h2>Crear Cuenta</h2>
-                <label for="correo">Correo Electrónico:</label>
-                <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
-                <label for="createclave">Contraseña:</label>
-                <input type="password" id="createclave" name="myclave" placeholder="Cree su una contraseña." required>
-                <button id="buttonCrearCuenta" type="button">Registrarse</button>
-                <button class="changeForm" type="button">Ya tengo Cuenta</button>
-                <!-- Hay que cambiarle el color a los botones de cambio "changeForm" de formulario -->
+                <p class="register-link">¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate aquí</a></p>
             </form>
         </section>
+
+        <!-- Modal de Registro -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="createForm">
+                    <h2>Crear Cuenta</h2>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
+                    <label for="createclave">Contraseña:</label>
+                    <input type="password" id="createclave" name="myclave" placeholder="Cree su una contraseña." required>
+                    <button id="buttonCrearCuenta" type="button">Registrarse</button>
+                </form>
+            </div>
+        </div>
     </main>
     <aside>
     </aside>

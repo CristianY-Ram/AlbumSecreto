@@ -3,20 +3,24 @@
 const BACKEND_URL = 'https://3b137d11-88e6-45b6-be60-61724ad3e15c-00-2gjo5xa8flqk3.worf.replit.dev';
 
 
-document.querySelectorAll('.changeForm').forEach(button => {
-    button.addEventListener('click', function(e) {
-        const loginForm = document.getElementById('loginForm');
-        const createForm = document.getElementById('createForm');
-        if (loginForm.style.display === 'none') {
-            loginForm.style.display = 'block';
-            createForm.style.display = 'none';
-            // También limpiar valores del formulario actual
-        } else {
-            loginForm.style.display = 'none';
-            createForm.style.display = 'block';
-            // También limpiar valores del formulario 'createForm'
-        }
-    });
+// Modal functionality
+const modal = document.getElementById('registerModal');
+const showRegisterBtn = document.getElementById('showRegister');
+const closeBtn = document.getElementsByClassName('close')[0];
+
+showRegisterBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
 });
 function Enviar(email, password) { // explica cada término de esta función a profundidad
     console.log('Enviando datos:', { email, password });
