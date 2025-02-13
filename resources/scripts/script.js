@@ -46,6 +46,30 @@ function Enviar(email, password) { // explica cada término de esta función a p
         console.log('Datos recibidos:', data);
         if (data.success) {
             alert('Cuenta creada exitosamente.');
+            // Deshabilitar el formulario de cuenta
+            const createForm = document.getElementById('createForm');
+            createForm.classList.add('disabled-form');
+            createForm.style.display = 'none';
+            
+            // Habilitar el formulario de perfil
+            const profileForm = document.getElementById('profileForm');
+            profileForm.classList.remove('disabled-form');
+            const inputs = profileForm.getElementsByTagName('input');
+            const textarea = profileForm.getElementsByTagName('textarea');
+            const button = profileForm.getElementsByTagName('button')[0];
+            
+            // Habilitar todos los campos del formulario de perfil
+            for(let input of inputs) {
+                input.disabled = false;
+            }
+            for(let area of textarea) {
+                area.disabled = false;
+            }
+            button.disabled = false;
+            
+            // Pre-llenar el nombre de usuario con el email sin el dominio
+            const username = document.getElementById('username');
+            username.value = email.split('@')[0];
         } else {
             alert('Error al crear la cuenta: ' + (data.message || 'Ocurrió un problema inesperado.'));
         }
@@ -77,6 +101,24 @@ document.getElementById('buttonCrearCuenta').addEventListener('click', function(
 });
 
 
+
+// Manejar la creación del perfil
+document.getElementById('buttonCrearPerfil').addEventListener('click', function() {
+    const username = document.getElementById('username').value;
+    const displayName = document.getElementById('displayName').value;
+    const bio = document.getElementById('bio').value;
+    const location = document.getElementById('location').value;
+    const interests = document.getElementById('interests').value;
+
+    if (!username || !displayName) {
+        alert('El nombre de usuario y el nombre del perfil son obligatorios.');
+        return;
+    }
+
+    // Aquí puedes agregar la lógica para enviar los datos del perfil al servidor
+    // Por ahora, solo redirigiremos a la página de perfil
+    window.location.href = 'perfil.html';
+});
 
 document.getElementById('VerificarEstadoServidor').addEventListener('click', function(e) {
     e.preventDefault(); // Evita que el enlace navegue a otra página
