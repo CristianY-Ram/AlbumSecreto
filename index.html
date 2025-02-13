@@ -34,41 +34,19 @@
                 <label for="clave">Contraseña:</label>
                 <input type="password" id="clave" name="valorClave" placeholder="Ingrese su contraseña." required>
                 <button id="buttonIniciarCuenta" type="button">Iniciar</button>
-                <p class="register-link">¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate aquí</a></p>
+                <button class="changeForm" type="button">No tengo Cuenta</button>
+            </form>
+            <form id="createForm" style="display: none;">
+                <h2>Crear Cuenta</h2>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
+                <label for="createclave">Contraseña:</label>
+                <input type="password" id="createclave" name="myclave" placeholder="Cree su una contraseña." required>
+                <button id="buttonCrearCuenta" type="button">Registrarse</button>
+                <button class="changeForm" type="button">Ya tengo Cuenta</button>
+                <!-- Hay que cambiarle el color a los botones de cambio "changeForm" de formulario -->
             </form>
         </section>
-
-        <!-- Modal de Registro -->
-        <div id="registerModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="modal-forms">
-                    <form id="createForm">
-                        <h2>Crear Cuenta</h2>
-                        <label for="correo">Correo Electrónico:</label>
-                        <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
-                        <label for="createclave">Contraseña:</label>
-                        <input type="password" id="createclave" name="myclave" placeholder="Cree su contraseña." required>
-                        <button id="buttonCrearCuenta" type="button">Registrarse</button>
-                    </form>
-
-                    <form id="profileForm" class="disabled-form">
-                        <h2>Crear Perfil</h2>
-                        <label for="username">Nombre de Usuario:</label>
-                        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" placeholder="Solo letras y números" disabled>
-                        <label for="displayName">Nombre del Perfil:</label>
-                        <input type="text" id="displayName" name="displayName" placeholder="Tu nombre o apodo" disabled>
-                        <label for="bio">Biografía (opcional):</label>
-                        <textarea id="bio" name="bio" placeholder="Cuéntanos sobre ti..." disabled></textarea>
-                        <label for="location">Ubicación (opcional):</label>
-                        <input type="text" id="location" name="location" placeholder="Tu ciudad o país" disabled>
-                        <label for="interests">Intereses (opcional):</label>
-                        <input type="text" id="interests" name="interests" placeholder="Música, arte, viajes..." disabled>
-                        <button id="buttonCrearPerfil" type="button" disabled>Crear Perfil</button>
-                    </form>
-                </div>
-            </div>
-        </div>
     </main>
     <aside>
     </aside>
@@ -77,8 +55,7 @@
             &copy; 2025 Álbum Secreto
         </p>
         <p>
-            Términos de Servicio | Política de Privacidad | 
-            <a href="#" id="VerificarEstadoServidor">Estado del Backend</a>
+            Términos de Servicio | Política de Privacidad
         </p>
     </footer>
     <script src="resources/scripts/script.js"></script>
