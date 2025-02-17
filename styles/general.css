@@ -23,16 +23,21 @@ header {
 }
 
 .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
+    position: fixed; 
     top: 0;
-    left: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
     background-color: #111;
+    color: white;
     overflow-x: hidden;
-    transition: width 0.5s; /* Añadir transición suave para el ancho */
+    transition: left 0.3s ease;
+    z-index: 1000;
     padding-top: 60px;
+}
+
+.sidebar.open {
+    left: 0; /* Desplaza el menú a la vista */
 }
 
 .sidebar a {
