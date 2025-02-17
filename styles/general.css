@@ -21,7 +21,7 @@
     border-radius: 5px;
     z-index: 1000;
 }
-#logo {
+#Logo {
     width: 50px;
     height: auto;
     margin-right: 10px;
@@ -36,20 +36,7 @@
     margin-top: 30px;
 }
 
-section#seccionIntroduccion p {
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    text-align: left;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-left: 0;
-}
-
-.sidebar {
+#Menu {
     position: fixed;
     top: 0;
     left: -250px;
@@ -63,12 +50,11 @@ section#seccionIntroduccion p {
     padding-top: 60px;
 }
 
-.sidebar.open {
+#Menu.abrir {
     left: 0;
-    /* Desplaza el menú a la vista */
 }
 
-.sidebar a {
+#Menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -77,22 +63,8 @@ section#seccionIntroduccion p {
     transition: 0.3s;
 }
 
-.sidebar a:hover {
+#Menu a:hover {
     color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left 0.5s;
-    /* Añadir transición suave para el margen izquierdo */
-    padding: 16px;
 }
 
 .openbtn {
@@ -106,4 +78,23 @@ section#seccionIntroduccion p {
 
 .openbtn:hover {
     background-color: #444;
+}
+
+#Main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+
+    
+}
+#seccionIntroduccion p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 0;
 }
