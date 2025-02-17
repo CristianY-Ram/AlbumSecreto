@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum Secreto</title>
+    <meta name="description" content="El espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.">
+    <meta name="keywords" content="Album, Diario, Amor, Propio, Personal, Secretos, Privado">
+    <meta name="author" content="Cristian Ramírez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon16.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+
+        <h1>Álbum Secreto</h1>
+        <button id="BotonMenu" class="openbtn" onclick="openNav()">☰</button>
+        <nav id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Introducción">Introducción</a>
+            <a href="#Cuenta">Cuenta</a>
+            <a href="#Manual">Manual</a>
+            <a href="#Características">Características</a>
+            <a href="#Terminos">Terminos de Usuario</a>
+            <a href="#Sugerencias">Comentarios</a>
+            <a href="#Información">Más Información</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="SecciónIntroduccion">
+            <p>
+                Bienvenido a Álbum Secreto, tu refugio confidencial. Aquí podrás guardar tus secretos, reflexiones y recuerdos más preciados con total seguridad. Tu privacidad es nuestra prioridad. Crea tu cuenta totalmente gratuita y comienza a escribir tu historia. Descubre la libertad de expresarte sin límites en Álbum Secreto.
+            </p>
+        </section>
+        <section id="SecciónCuenta">
+            <h2>Cuenta</h2>
+            <p>Crea una Cuenta o Inicia Sesión si ya tienes cuenta con nosotros, para que aproveches nuestras nuevas funciones. 😎</p>
+            <div id="CajaAcceso">
+                <h3>Acceso</h3>
+                <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+                <button onclick="window.location.href='register.html'">Crear Cuenta</button>
+            </div>
+
+            <!-- Contenido -->
+        </section>
+        <section id="SecciónManual">
+            <!-- Contenido -->
+        </section>
+        <section id="SecciónCaracterísticas">
+            <!-- Contenido -->
+        </section>
+    </main>
+
+    <section id="SecciónTerminos">
+        <!-- Contenido -->
+    </section>
+    <section id="SecciónSugerencias">
+        <!-- Contenido -->
+    </section>
+    <section id="SecciónInformación">
+        <!-- Contenido -->
+    </section>
+
+
+    <footer>
+        <p>
+            &copy; 2025 Álbum Secreto
+        </p>
+        <p>
+            Términos de Servicio | Política de privacidad
+        </p>
+        <a href="#" id="VerificarEstadoServidor">Estado del Backend</a>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/active.js"></script>
+</body>
+</html>

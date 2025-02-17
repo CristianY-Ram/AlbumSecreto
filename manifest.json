@@ -1,0 +1,23 @@
+{
+  "name": "Álbum Secreto",
+  "short_name": "Álbum",
+  "description": "El espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "resources/icons/android192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "resources/icons/android512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

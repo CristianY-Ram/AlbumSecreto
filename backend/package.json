@@ -1,0 +1,32 @@
+{
+    "name": "BackendSecreto",
+    "version": "1.0.0",
+    "description": "Un backend avanzado para gestionar información sencible",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Cristian Ramirez",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CristianY-Ram/BackendPrivate"
+    },
+    "keywords": [
+        "backend",
+        "nodejs",
+        "express",
+        "mongoose"
+    ],
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "@supabase/supabase-js": "^2.39.0",
+        "express": "^4.17.1"
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+    },
+    "homepage": "https://backendprivate.onrender.com/"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e0f7fa;
+            background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+        }
+        .auth-box {
+            background-color: #ffffff;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            padding: 40px 50px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+            border-image: linear-gradient(45deg, #42a5f5, #66bb6a);
+            border-image-slice: 1;
+        }
+        .auth-box h2 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .auth-box button {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .auth-box button.login {
+            background-color: #42a5f5;
+            color: white;
+        }
+        .auth-box button.create-account {
+            background-color: #66bb6a;
+            color: white;
+        }
+        .auth-box button:hover {
+            transform: scale(1.05);
+        }
+        .auth-box button.login:hover {
+            background-color: #1e88e5;
+        }
+        .auth-box button.create-account:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-box">
+        <h2>Acceso</h2>
+        <button class="login" onclick="window.location.href='login.html'">Iniciar Sesión</button>
+        <button class="create-account" onclick="window.location.href='register.html'">Crear Cuenta</button>
+    </div>
+</body>
+</html>

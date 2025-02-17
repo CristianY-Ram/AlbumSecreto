@@ -1,0 +1,91 @@
+<!-- Archivo HTML -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum Secreto</title>
+    <meta name="description" content="El espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.">
+    <meta name="keywords" content="Album, Diario, Amor, Propio, Personal, Secretos, Privado">
+    <meta name="author" content="Cristian Ramírez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon16.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Álbum Secreto</h1>
+    </header>
+    <main>
+        <section id="Introduccion">
+            <p>
+                Bienvenidos a Álbum Secreto, el espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.
+            </p>
+            <p>
+                Totalmente confiable y seguro, Álbum Secreto es la plataforma ideal para guardar tus secretos y notas de diario. Nos preocupamos por tu privacidad y trabajamos para proteger tus datos. Únete hoy mismo creando una cuenta o inicia sesión para comenzar a escribir tu historia.
+            </p>
+        </section>
+        <section id="login">
+            <form id="loginForm">
+                <h2>Iniciar Sesión</h2>
+                <label for="cuenta">Cuenta:</label>
+                <input type="text" id="cuenta" name="valorCuenta" placeholder="Ingrese correo o nombre de usuario." required>
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="valorClave" placeholder="Ingrese su contraseña." required>
+                <button id="buttonIniciarCuenta" type="button">Iniciar</button>
+                <p class="register-link">
+                    ¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate aquí</a>
+                </p>
+            </form>
+        </section>
+
+        <!-- Modal de Registro -->
+        <div id="registerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-forms">
+                    <form id="createForm">
+                        <h2>Crear Cuenta</h2>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="valorCorreo" placeholder="Ingrese su correo electrónico." required>
+                        <label for="createclave">Contraseña:</label>
+                        <input type="password" id="createclave" name="myclave" placeholder="Cree su contraseña." required>
+                        <button id="buttonCrearCuenta" type="button">Registrarse</button>
+                    </form>
+
+                    <form id="profileForm" class="disabled-form">
+                        <h2>Crear Perfil</h2>
+                        <label for="username">Nombre de Usuario:</label>
+                        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+" placeholder="Solo letras y números" disabled>
+                        <label for="displayName">Nombre del Perfil:</label>
+                        <input type="text" id="displayName" name="displayName" placeholder="Tu nombre o apodo" disabled>
+                        <label for="bio">Biografía (opcional):</label>
+                        <textarea id="bio" name="bio" placeholder="Cuéntanos sobre ti..." disabled></textarea>
+                        <label for="location">Ubicación (opcional):</label>
+                        <input type="text" id="location" name="location" placeholder="Tu ciudad o país" disabled>
+                        <label for="interests">Intereses (opcional):</label>
+                        <input type="text" id="interests" name="interests" placeholder="Música, arte, viajes..." disabled>
+                        <button id="buttonCrearPerfil" type="button" disabled>Crear Perfil</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+    </aside>
+    <footer>
+        <p>
+            &copy; 2025 Álbum Secreto
+            Términos de Servicio | Política de Privacidad
+        </p>
+        <p>
+            Términos de Servicio | Política de Privacidad
+            <a href="#" id="VerificarEstadoServidor">Estado del Backend</a>
+        </p>
+    </footer>
+    <script src="resources/scripts/script.js"></script>
+</body>
+</html>
