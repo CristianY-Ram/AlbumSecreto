@@ -48,7 +48,7 @@ _Carpeta Raiz del Proyecto_
 - TASK.md       `Estructura y Planificación (Este Archivo)`
 
 ## DOCUMENTACIÓN
-_Al Acceder a [AlbumSecreto.com],AlbumSecreto.com, se abrirá `index.html` que contiene la Página Principal del Sitio._
+_Al Acceder a [AlbumSecreto.com](https://cristiany-ram.github.io/AlbumSecreto/), se abrirá `index.html` que contiene la Página Principal del Sitio._
 _`main.html`: Página HTML que introduce a nuevos usuarios al sitio web Álbum Secreto, Costa con una interfaz agradable con su Navegación, Descripción, Introducción y Funciones importantes_
 ### Elementos:
 **Imagen** `album.jpg` y **Título del Sitio** `Album Secreto`.
