@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html id="Todo" lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Álbum Secreto</title>
@@ -15,32 +15,33 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <header>
+    <header id="Encabezado">
         <button id="BotonMenu" class="openbtn" onclick="openNav()">☰</button>
-        <img src="resources/images/album.jpg" alt="Logo" id="logo">
-        <h1>Álbum Secreto</h1>
-        <nav id="sidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#Inicio">Inicio</a>
-            <a href="#Introducción">Introducción</a>
-            <a href="#Cuenta">Cuenta</a>
-            <a href="#Manual">Manual</a>
-            <a href="#Características">Características</a>
-            <a href="#Terminos">Terminos de Usuario</a>
-            <a href="#Sugerencias">Comentarios</a>
-            <a href="#Información">Más Información</a>
-        </nav>
+        <img id="Logo" src="resources/images/album.jpg" alt="Logo">
+        <h1 id="Titulo">Álbum Secreto</h1>
     </header>
-
+    <nav id="Menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Introducción">Introducción</a>
+        <a href="#Cuenta">Cuenta</a>
+        <a href="#Manual">Manual</a>
+        <a href="#Características">Características</a>
+        <a href="#Terminos">Terminos de Usuario</a>
+        <a href="#Sugerencias">Comentarios</a>
+        <a href="#Información">Más Información</a>
+    </nav>
     <main id="main">
-        <section id="SecciónIntroduccion">
+        <section id="seccionIntroduccion">
             <p>
                 Bienvenido a Álbum Secreto, tu refugio confidencial. Aquí podrás guardar tus secretos, reflexiones y recuerdos más preciados con total seguridad. Tu privacidad es nuestra prioridad. Crea tu cuenta totalmente gratuita y comienza a escribir tu historia. Descubre la libertad de expresarte sin límites en Álbum Secreto.
             </p>
         </section>
         <section id="SecciónCuenta">
             <h2>Cuenta</h2>
-            <p>Crea una Cuenta o Inicia Sesión si ya tienes cuenta con nosotros, para que aproveches nuestras nuevas funciones. 😎</p>
+            <p>
+                Crea una Cuenta o Inicia Sesión si ya tienes cuenta con nosotros, para que aproveches nuestras nuevas funciones. 😎
+            </p>
             <div id="CajaAcceso">
                 <h3>Acceso</h3>
                 <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
