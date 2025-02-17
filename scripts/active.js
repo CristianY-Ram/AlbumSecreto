@@ -1,7 +1,7 @@
-function openNav() {
-  document.getElementById("sidebar").classList.add("open");
+function abrirNav() {
+  document.getElementById("sidebar").classList.add("abrir");
 }
 
-function closeNav() {
-  document.getElementById("sidebar").classList.remove("open");
+function cerrarNav() {
+  document.getElementById("sidebar").classList.remove("abrir");
 }
