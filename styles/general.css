@@ -46,7 +46,7 @@
     color: white;
     overflow-x: hidden;
     transition: left 0.3s ease;
-    z-index: 1000;
+    z-index: 999;
     padding-top: 60px;
 }
 
