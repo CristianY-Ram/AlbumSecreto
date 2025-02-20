@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html id="HTML" lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Álbum Secreto</title>
+  <meta name="description" content="El espacio ideal para expresar tus pensamientos, compartir tus ideas y conservar tus recuerdos de manera confidencial y segura.">
+  <meta name="keywords" content="Album, Diario, Amor, Propio, Personal, Secretos, Privado">
+  <meta name="author" content="Cristian Ramírez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/resources/icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/resources/icons/favicon16.png">
+  <link rel="stylesheet" type="text/css" href="/styles/general.css">
+</head>
+
+<body>
+  <header id="Encabezado">
+    <button id="BotonMenu" onclick="moverNav()">☰</button>
+    <img id="Logo" src="/resources/images/album.jpg" alt="Logo">
+    <h1 id="Titulo">Álbum Secreto</h1>
+  </header>
+  <nav id="Menu">
+    <div id="ListaIndices">
+      <a href="#seccionIntroduccion">Inicio</a>
+      <a href="#seccionCuenta">Cuenta</a>
+      <a href="#seccionManual">Manual</a>
+      <a href="#seccionCaracterísticas">Características</a>
+      <a href="#seccionTerminos">Términos</a>
+      <a href="#seccionSugerencias">Comentarios</a>
+      <a href="#seccionInformación">Información</a>
+    </div>
+  </nav>
+  <main id="Main">
+    <section class="Secciones" id="seccionIntroduccion">
+      <p>
+        Bienvenido a Álbum Secreto, tu refugio confidencial. Aquí podrás guardar tus secretos, reflexiones y recuerdos más preciados con total seguridad. Tu privacidad es nuestra prioridad. Crea tu cuenta totalmente gratuita y comienza a escribir tu historia. Descubre la libertad de expresarte sin límites en Álbum Secreto.
+      </p>
+    </section>
+    <section class="Secciones" id="seccionCuenta">
+      <h2>Cuenta</h2>
+      <p>
+        Crea una Cuenta o Inicia Sesión si ya tienes cuenta con nosotros, para que aproveches nuestras nuevas funciones. 😎
+      </p>
+      <div id="CajaAcceso">
+        <h3>Acceso</h3>
+        <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+        <button onclick="window.location.href='register.html'">Crear Cuenta</button>
+      </div>
+      
+      <!-- Contenido -->
+    </section>
+    <section class="Secciones" id="seccionManual">
+      <h2>Manual de Usuario</h2>
+      <div class="adatacionContenido">
+        <div class="bloqueTextoInfo">
+          <h3>Crear una Entrada</h3>
+          <p>Haz clic en el botón "+" para comenzar una nueva entrada en tu álbum. Puedes agregar texto, imágenes y etiquetas.</p>
+        </div>
+        <div class="bloqueTextoInfo">
+          <h3>Privacidad</h3>
+          <p>Configura la privacidad de cada entrada eligiendo entre "Solo yo", "Compartido" o "Público".</p>
+        </div>
+        <div class="bloqueTextoInfo">
+          <h3>Organización</h3>
+          <p>Utiliza etiquetas y categorías para mantener tus entradas organizadas y fáciles de encontrar.</p>
+        </div>
+      </div>
+    </section>
+    <section class="Secciones" id="seccionCaracteristicas">
+      <h2>Características Principales</h2>
+      <div class="carruselCartas">
+        <div class="cartas">
+          <h3>Encriptación Segura</h3>
+          <p>Tus datos están protegidos con encriptación de nivel militar y certificados SSL de última generación.</p>
+        </div>
+        <div class="cartas">
+          <h3>Respaldo Automático</h3>
+          <p>Sistema de respaldo en la nube con sincronización en tiempo real y recuperación instantánea.</p>
+        </div>
+        <div class="cartas">
+          <h3>Multimedia Avanzado</h3>
+          <p>Soporta fotos en alta resolución, videos HD y grabaciones de audio con etiquetado inteligente.</p>
+        </div>
+        <div class="cartas">
+          <h3>Organización Inteligente</h3>
+          <p>Clasifica automáticamente tus memorias por fecha, lugar y personas utilizando IA.</p>
+        </div>
+        <div class="cartas">
+          <h3>Modo Offline</h3>
+          <p>Accede a tus recuerdos incluso sin conexión a internet con sincronización posterior.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="Secciones" id="seccionTerminos">
+    <h2>Términos de Uso</h2>
+    <div class="terms-container">
+      <h3>Privacidad y Seguridad</h3>
+      <p>Nos comprometemos a mantener tu información segura y privada. Nunca compartiremos tus datos personales.</p>
+      <h3>Uso Responsable</h3>
+      <p>Los usuarios son responsables del contenido que publican y deben respetar las leyes locales.</p>
+    </div>
+  </section>
+  <section class="Secciones" id="seccionSugerencias">
+    <h2>Sugerencias y Comentarios</h2>
+    <div class="feedback-container">
+      <form id="FormComentarios">
+        <input type="text" placeholder="Tu nombre" required>
+        <textarea placeholder="Comparte tus sugerencias o comentarios" required></textarea>
+        <button type="submit">Enviar Comentario</button>
+        <button type="submit">Ver Comentarios</button>
+      </form>
+    </div>
+  </section>
+  <section class="Secciones" id="seccionInformacion">
+    <h2>Más Información</h2>
+    <div class="adatacionContenido">
+      <div class="bloqueTextoInfo">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos un equipo dedicado a crear espacios seguros para la expresión personal.</p>
+      </div>
+      <div class="bloqueTextoInfo">
+        <h3>Contacto</h3>
+        <p>Correo: soporte@albumsecreto.com</p>
+        <p>Teléfono: +1 234 567 8900</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <p>
+      &copy; 2025 Álbum Secreto
+    </p>
+    <p>
+      Términos de Servicio | Política de privacidad
+    </p>
+  </footer>
+  <script src="/scripts/active.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 /* styles/general.css */
-#Todo {
-  background-image: url('../resources/background/dreambook.jpg');
+#HTML {
+  background-image: url('/resources/background/dreambook.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

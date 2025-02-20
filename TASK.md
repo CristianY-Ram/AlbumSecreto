@@ -20,12 +20,13 @@ _Carpeta Raiz del Proyecto_
         - dreambook.jpg     `Libro de ensueño`
 - pages/        `Archivos HTML`
     - main.html         `Página Principal`
-    - ingresar.html     `Modal Iniciar Seción`
+    - login.html     `Modal Inicio de Seción`
     - register.html     `Página Registro`
     - profile.html      `Página Perfil`
     - backend.html      `Página Backend`
 - styles/       `Archivos CSS`
     - general.css       `Estilos Generales`
+    - login.css
     - themes/           `Temas de Estilos`
         - dark.css          `Tema Oscuro`
 - scripts/      `Archivos Javascript`
