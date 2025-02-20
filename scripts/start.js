@@ -42,4 +42,3 @@
         });
       });
     }
-    window.location.href = '/pages/main.html';
