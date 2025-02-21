@@ -19,18 +19,25 @@ _Carpeta Raiz del Proyecto_
     - background/       `Fondos`
         - dreambook.jpg     `Libro de ensueño`
 - pages/        `Archivos HTML`
+    - loading.html      `Página Cargando`
     - main.html         `Página Principal`
-    - login.html     `Modal Inicio de Seción`
     - register.html     `Página Registro`
     - profile.html      `Página Perfil`
     - backend.html      `Página Backend`
+    - 404.html          `Página Inexistente`
+    - templates/
+       - load.html       `Animación de carga`
+       - login.html      `Modal Inicio de Seción`
 - styles/       `Archivos CSS`
+    - loading.css       `Pantalla de Carga`
     - general.css       `Estilos Generales`
-    - login.css
+    - login.css         `Estilos Inicio Sección`
     - themes/           `Temas de Estilos`
         - dark.css          `Tema Oscuro`
 - scripts/      `Archivos Javascript`
-    - active.js         `Codigo Principal`
+    - start.js          `Codigo de Iniciación`
+    - serviceWorker.js  `Configuracion Service Worker`
+    - active.js         `Codigo Actividades`
     - functions.js      `Código de Funciones`
     - apis.js           `Llamadas a APIs`
 - backend/      `Directorio del Backend`
@@ -44,7 +51,6 @@ _Carpeta Raiz del Proyecto_
     - README.md        `Descripción y Intrucciones del Servidor`
 - index.html    `Archivo HTML Principal`
 - manifest.json `Manifiesto PWA`
-- sw.js         `Service Worker`
 - README.md     `Descripción y Intrucciones`
 - TASK.md       `Estructura y Planificación (Este Archivo)`
 

@@ -1,3 +1,20 @@
+import Start from '/scripts/start.js';
+const start = new Start();
+
+start.RegistrarSW(); // Registra el Service Worker
+start.ActualizarPantalla(); // Actualiza la pantalla según la URL actual
+
+document.querySelectorAll('a').forEach(enlace => {
+  enlace.addEventListener('click', (e) => {
+    e.preventDefault();
+    const ruta = e.target.getAttribute('href');
+    start.CargarPantalla(ruta); // Navega a la ruta especificada sin recargar la página
+  });
+});
+
+
+
+
 // Función para el menú desplegable
 function moverNav() {
   var menu = document.getElementById("Menu");

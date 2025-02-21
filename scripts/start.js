@@ -1,44 +1,45 @@
-  document.addEventListener('DOMContentLoaded', () => {
-      const usuarioAutenticado = localStorage.getItem('usuarioAutenticado');
-      const primeraVez = !localStorage.getItem('visitado');
-      const tieneNotificaciones = localStorage.getItem('notificaciones');
-      
-      function redirigir(url) {
-        setTimeout(() => {
-          window.history.pushState({}, '', url);
-          window.location.href = url;
-        }, 800); // 800 milisegundos = 0.8 segundos
-      }
-      
-      const ruta = window.location.pathname;
-      
-      if (primeraVez) {
-        localStorage.setItem('visitado', 'true');
-        redirigir('/pages/main.html');
-      } else if (usuarioAutenticado) {
-        if (tieneNotificaciones) {
-          redirigir('/pages/notifications.html');
-        } else {
-          redirigir('/pages/profile.html');
-        }
-      } else if (ruta === '/registro') {
-        redirigir('/pages/register.html');
-      } else if (ruta === '/inicio') {
-        redirigir('/pages/main.html');
-      } else if (ruta === '/perfil') {
-        redirigir('/pages/profile.html');
-      } else {
-        redirigir('/pages/main.html');
-      }
-    });
-    
-    
-     if ('serviceWorker' in navigator) {
+export default class Start {
+  
+  constructor(rutas) {
+    this.Rutas = rutas || {
+      '/': '/pages/main.html',
+      '/Principal': '/pages/main.html',
+      '/Registro': '/pages/register.html',
+      '/Perfil': '/pages/profile.html',
+      '/Ajustes': '/pages/backend.html',
+      '/404': '/pages/404.html'
+    };
+  }
+  
+  RegistrarSW() {
+    if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(reg => {
+        navigator.serviceWorker.register('/scripts/serviceWorker.js').then(reg => {
           console.log('Service Worker registrado: ', reg);
         }).catch(err => {
           console.error('Registro de Service Worker fallido: ', err);
         });
       });
     }
+  }
+  
+  async CargarPantalla(enlace) {
+    const dirPantalla = this.Rutas[enlace] || this.Rutas['/404'];
+    try {
+      const respuesta = await fetch(dirPantalla);
+      if (!respuesta.ok) throw new Error('Página no encontrada');
+      const cuerpo = await respuesta.text();
+      document.getElementById('BODY').innerHTML = cuerpo;
+      window.history.pushState({}, '', enlace);
+      localStorage.setItem('UltimaVisita', enlace);
+    } catch (error) {
+      console.error('Ocurrió un error al cargar la pantalla:', error);
+    }
+  }
+  
+  ActualizarPantalla() {
+    const url = window.location.pathname;
+    this.CargarPantalla(url);
+  }
+  
+}
