@@ -3,6 +3,7 @@ export default class Start {
   constructor(rutas) {
     this.Rutas = rutas || {
       '/': '/pages/main.html',
+      '/index.html': '/pages/main.html',
       '/Principal': '/pages/main.html',
       '/Registro': '/pages/register.html',
       '/Perfil': '/pages/profile.html',
